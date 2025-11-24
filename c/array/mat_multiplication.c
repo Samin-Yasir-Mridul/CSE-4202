@@ -38,9 +38,9 @@ int main()
 
 int matInput(int r, int c, int mat[r][c])
 {
-    for(int j=0; j<r; j++)
+    for (int j = 0; j < r; j++)
     {
-        for(int i=0; i<c; i++)
+        for (int i = 0; i < c; i++)
         {
             printf("Mat[%d][%d]= ", j, i);
             scanf("%d", &mat[j][i]);
@@ -51,10 +51,10 @@ int matInput(int r, int c, int mat[r][c])
 
 int matOutput(int r, int c, int mat[r][c])
 {
-    for(int j=0; j<r; j++)
+    for (int j = 0; j < r; j++)
     {
         printf("|");
-        for(int i=0; i<c; i++)
+        for (int i = 0; i < c; i++)
         {
             printf("%d ", mat[j][i]);
         }
@@ -65,12 +65,12 @@ int matOutput(int r, int c, int mat[r][c])
 
 int matMultiplication(int r1, int c1, int mat1[r1][c1], int r2, int c2, int mat2[r2][c2], int res[r1][c2])
 {
-    for(int i=0; i<r1; i++)
+    for (int i = 0; i < r1; i++)
     {
-        for(int j=0; j<c2; j++)
+        for (int j = 0; j < c2; j++)
         {
             res[i][j] = 0;
-            for(int k=0; k<c1; k++)
+            for (int k = 0; k < c1; k++)
             {
                 res[i][j] += mat1[i][k] * mat2[k][j];
             }

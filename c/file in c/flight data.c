@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 int main()
 {
   FILE *file;
@@ -7,9 +7,9 @@ int main()
   int altitude;
   float speed;
 
-  file= fopen("C:\\Users\\Student\\Desktop\\25024001\\File in C\\Flight Data\\data.txt", "w");
+  file = fopen("C:\\Users\\Student\\Desktop\\25024001\\File in C\\Flight Data\\data.txt", "w");
 
-  if(file==NULL)
+  if (file == NULL)
     printf("Error");
 
   printf("Enter Flight name          : ");

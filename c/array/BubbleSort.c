@@ -1,9 +1,7 @@
 #include <stdio.h>
-void out(int list[], int n);           
+void out(int list[], int n);
 
-
-
-void out(int list[], int n)            
+void out(int list[], int n)
 {
     printf("Array= [");
     for (int i = 0; i < n; i++)
@@ -28,11 +26,9 @@ int main()
         printf("At list[%d]= ", i);
         scanf("%d", &list[i]);
     }
-    
+
     printf("Before sorting ");
-    out(list, n);           
-
-
+    out(list, n);
 
     for (int i = 0; i < n; i++)
     {
@@ -48,6 +44,6 @@ int main()
     }
 
     printf("After sorting ");
-    out(list, n);       
+    out(list, n);
     return 0;
 }

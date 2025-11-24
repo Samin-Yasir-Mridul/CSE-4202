@@ -13,23 +13,22 @@ int main()
     printf("Enter 1st distance: \n");
 
     printf("Feet: ");
-    scanf("%d",&n1.feet);
+    scanf("%d", &n1.feet);
     printf("Inch: ");
-    scanf("%d",&n1.inch);
+    scanf("%d", &n1.inch);
 
     printf("Enter 2nd distance: \n");
 
     printf("Feet: ");
-    scanf("%d",&n2.feet);
+    scanf("%d", &n2.feet);
     printf("Inch: ");
-    scanf("%d",&n2.inch);
+    scanf("%d", &n2.inch);
 
-    result.feet= n1.feet + n2.feet;
-    result.inch= n1.inch + n2.inch;
+    result.feet = n1.feet + n2.feet;
+    result.inch = n1.inch + n2.inch;
 
+    if (result.inch > 12)
 
-    if(result.inch>12)
-
-    printf("Sum= %dfeet %dinch\n", result.feet+result.inch/12, result.inch%12);
+        printf("Sum= %dfeet %dinch\n", result.feet + result.inch / 12, result.inch % 12);
     return 0;
 }

@@ -17,5 +17,5 @@ int main()
             location = c;
         }
     }
-    printf("Largest element= %d and location= %d", numbers[location], location+1);
+    printf("Largest element= %d and location= %d", numbers[location], location + 1);
 }
